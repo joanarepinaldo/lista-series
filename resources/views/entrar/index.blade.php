@@ -23,7 +23,7 @@
         @csrf
         <!-- Title -->
         <div class="mb-5 mb-md-7 text-center">
-        <img class="mb-4 mt-4" src="{{asset(https://img-premium.flaticon.com/png/512/2828/premium/2828307.png?token=exp=1625668705~hmac=804ee24a51e0bad2eb357735c06de75d)}}" alt="" width="72" height="72">
+        <img class="mb-4 mt-4" src="{{URL::asset('img-premium.flaticon.com/png/512/2828/premium/2828307.png?token=exp=1625668705~hmac=804ee24a51e0bad2eb357735c06de75d')}}" alt="" width="72" height="72">
          <h1 class="h2 mb-1">Bem-vindo!</h1>
           <p>Faça login em sua conta.</p>
         </div>
