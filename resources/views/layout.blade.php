@@ -28,7 +28,7 @@
        
         </div>
     </nav>
-    <img src="{{ public_path('img/cachorro.png') }}" alt="" class="img-fluid">
+    <!-- <img src="{{ public_path('img/cachorro.png') }}" alt="" class="img-fluid"> -->
     
     <div class="bg-info text-white">
         <div class="container">
