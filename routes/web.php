@@ -16,25 +16,25 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/series', 'SeriesController@index')
     ->name('listar_series');
 Route::get('/series/criar', 'SeriesController@create')
-    ->name('form_criar_serie')
-    ->middleware('autenticador');
-Route::post('/series/criar', 'SeriesController@store')
-    ->middleware('autenticador');
-Route::delete('/series/{id}', 'SeriesController@destroy')
-    ->middleware('autenticador');
+    ->name('form_criar_serie');
+   // ->middleware('autenticador');
+Route::post('/series/criar', 'SeriesController@store');
+   // ->middleware('autenticador');
+Route::delete('/series/{id}', 'SeriesController@destroy');
+   // ->middleware('autenticador');
 
-Route::delete('/temporadas/{temporada}/episodios', 'TemporadasController@destroyT')
-    ->middleware('autenticador'); 
+Route::delete('/temporadas/{temporada}/episodios', 'TemporadasController@destroyT');
+    //->middleware('autenticador'); 
      
-Route::post('/series/{id}/editaNome', 'SeriesController@editaNome')
-    ->middleware('autenticador');
+Route::post('/series/{id}/editaNome', 'SeriesController@editaNome');
+   // ->middleware('autenticador');
 
 Route::get('/series/{temporada}/temporadas', 'TemporadasController@index')->name('listar_temporadas');
 
 Route::get('/temporadas/{temporada}/episodio', 'EpisodiosController@index');
 
-Route::post('/temporadas/{temporada}/episodio/assistir', 'EpisodiosController@assistir')
-    ->middleware('autenticador');
+Route::post('/temporadas/{temporada}/episodio/assistir', 'EpisodiosController@assistir');
+    //->middleware('autenticador');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
