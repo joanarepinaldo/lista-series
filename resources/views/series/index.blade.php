@@ -25,7 +25,7 @@
 @include('mensagem', ['mensagem' => $mensagem])
 
 
-<!-- @auth -->
+@auth
 <a href="{{ route('form_criar_serie') }}" class="btn btn-dark mb-3 mt-3 "><h5 class="text-white">Adicionar Nova Série</h5></a>
 
 <ul class="list-group">
@@ -66,7 +66,7 @@
     </li>
     @endforeach
 </ul>
-<!-- @endauth -->
+@endauth
 
 <script>
     function toggleInput(serieId) {
