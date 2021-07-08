@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/series', 'SeriesController@index')
     ->name('listar_series');
 Route::get('/series/criar', 'SeriesController@create')
