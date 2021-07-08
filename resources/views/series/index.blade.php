@@ -2,7 +2,10 @@
 
 @section('imagem')
 <div class=" col-xl-7 col-lg-6 col-md-12 text-lg-end text-center">
-<img src="{{ asset('../img/cachorro.png') }}"alt="" class="img-fluid"  >
+<img src="{{ public_path('img/cachorro.png') }}" alt="" class="img-fluid">
+<img src="{{ asset('../../img/cachorro.png') }}"alt="" class="img-fluid"  >
+<img src="../../img/cachorro.png"alt="" class="img-fluid"  >
+
 </div>
 @endsection
 
