@@ -119,7 +119,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', $_ENV['APP_KEY']),
+    'key' => env('APP_KEY', 'exM9FznOuc0B30R3CUX8zQi2oxWFhuB0oaDHWQydf6Q'),
  
     'cipher' => 'AES-256-CBC',
 
